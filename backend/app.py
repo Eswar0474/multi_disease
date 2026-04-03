@@ -11,7 +11,7 @@ app = FastAPI(title="HealthHint Foresee API")
 # Enable CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://multi-disease.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
