@@ -13,7 +13,7 @@ export interface PredictionResponse {
 
 export const getPrediction = async (selectedSymptoms: string[]): Promise<PredictionResponse> => {
   try {
-    const response = await fetch('`https://multi-disease-backend-gbgc.onrender.com/predict`', {
+    const response = await fetch("https://multi-disease-backend-gbgc.onrender.com/predict", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
